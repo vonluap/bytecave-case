@@ -1,2 +1,0 @@
-# bytecave-case
-school assignment 
