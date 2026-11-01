@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="da">
 
@@ -5,25 +6,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="referrer" content="no-referrer">
+
   <title>ByteCave - Gamingfællesskab</title>
 
-  <!-- 
-    - favicon link
-  -->
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
-
-  <!-- 
-    - custom css link
-  -->
   <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!-- 
-    - google font link
-  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link
     href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Poppins:wght@400;500;700&display=swap"
     rel="stylesheet">
@@ -31,24 +24,19 @@
 
 <body id="top">
 
-  <!-- 
-    - #HEADER
-  -->
+  <!-- HEADER -->
 
   <header class="header">
 
-    <!-- 
-      - overlay
-    -->
     <div class="overlay" data-overlay></div>
 
     <div class="container">
 
-      <a href="#" class="logo">
-        <img src="./assets/images/logo.svg" alt="GameX logo">
+      <a href="#hero" class="logo">
+        <img src="./assets/images/logo.svg" alt="ByteCave logo">
       </a>
 
-      <button class="nav-open-btn" data-nav-open-btn>
+      <button class="nav-open-btn" data-nav-open-btn aria-label="Åbn menu">
         <ion-icon name="menu-outline"></ion-icon>
       </button>
 
@@ -56,11 +44,11 @@
 
         <div class="navbar-top">
 
-          <a href="#" class="logo">
-            <img src="./assets/images/logo.svg" alt="GameX logo">
+          <a href="#hero" class="logo">
+            <img src="./assets/images/logo.svg" alt="ByteCave logo">
           </a>
 
-          <button class="nav-close-btn" data-nav-close-btn>
+          <button class="nav-close-btn" data-nav-close-btn aria-label="Luk menu">
             <ion-icon name="close-outline"></ion-icon>
           </button>
 
@@ -68,55 +56,49 @@
 
         <ul class="navbar-list">
 
-  <li>
-    <a href="#hero" class="navbar-link">Forside</a>
-  </li>
+          <li>
+            <a href="#hero" class="navbar-link">Forside</a>
+          </li>
 
-  <li>
-    <a href="#tournament" class="navbar-link">Turneringer & Events</a>
-  </li>
+          <li>
+            <a href="#tournament" class="navbar-link">Turneringer & events</a>
+          </li>
 
-  <li>
-    <a href="#gears" class="navbar-link">Hardware & Specs</a>
-  </li>
+          <li>
+            <a href="#gears" class="navbar-link">Hardware & specs</a>
+          </li>
 
-  <li>
-    <a href="#practical" class="navbar-link">Praktisk Info & Regler</a>
-  </li>
+          <li>
+            <a href="#practical" class="navbar-link">Praktisk info & regler</a>
+          </li>
 
-  <li>
-    <a href="#about" class="navbar-link">Om Os</a>
-  </li>
+          <li>
+            <a href="#about" class="navbar-link">Om os</a>
+          </li>
 
-  <li>
-    <a href="#contact" class="navbar-link">Kontakt</a>
-  </li>
+          <li>
+            <a href="#contact" class="navbar-link">Kontakt</a>
+          </li>
 
-</ul>
+        </ul>
 
         <ul class="nav-social-list">
 
           <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
+            <a href="#" class="social-link" aria-label="Instagram">
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
           </li>
 
           <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
+            <a href="#" class="social-link" aria-label="YouTube">
+              <ion-icon name="logo-youtube"></ion-icon>
             </a>
           </li>
 
           <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-youtube"></ion-icon>
+            <a href="#" class="social-link" aria-label="Discord">
+              <ion-icon name="logo-discord"></ion-icon>
             </a>
           </li>
 
@@ -126,19 +108,13 @@
 
       <div class="header-actions">
 
-        <button class="search">
-          <ion-icon name="search-outline"></ion-icon>
-        </button>
-
-        <button class="btn-sign_in">
-
+        <a href="#contact" class="btn-sign_in">
           <div class="icon-box">
-            <ion-icon name="log-in-outline"></ion-icon>
+            <ion-icon name="mail-outline"></ion-icon>
           </div>
 
-          <span>Log-in</span>
-
-        </button>
+          <span>Kontakt os</span>
+        </a>
 
       </div>
 
@@ -147,62 +123,61 @@
   </header>
 
 
-
-
-
   <main>
     <article>
 
-      <!-- 
-        - #HERO
-      -->
+      <!-- HERO -->
 
       <section class="hero" id="hero">
+
         <div class="container">
 
           <p class="hero-subtitle">VELKOMMEN TIL BYTECAVE</p>
 
-<h1 class="h1 hero-title">SPIL. KONKURRÉR. BLIV BEDRE.</h1>
+          <h1 class="h1 hero-title">
+            SPIL. KONKURRÉR. BLIV BEDRE.
+          </h1>
 
-<div class="btn-group">
+          <div class="btn-group">
 
-  <button class="btn btn-primary">
-  <span>Tilmeld event</span>
-  <ion-icon name="calendar-outline"></ion-icon>
-</button>
+            <a href="#tournament" class="btn btn-primary">
+              <span>Se events</span>
+              <ion-icon name="calendar-outline"></ion-icon>
+            </a>
 
-  <button class="btn btn-link">
-  <span>Bliv medlem</span>
-  <ion-icon name="person-outline"></ion-icon>
-</button>
+            <a href="#about" class="btn btn-link">
+              <span>Lær os at kende</span>
+              <ion-icon name="people-outline"></ion-icon>
+            </a>
 
-</div>
+          </div>
 
         </div>
+
       </section>
-
-
-
 
 
       <div class="section-wrapper">
 
-        <!-- 
-          - #ABOUT
-        -->
+        <!-- ABOUT -->
 
         <section class="about" id="about">
+
           <div class="container">
 
             <figure class="about-banner">
 
-              <img src="./assets/images/about-img.png" alt="M shape" class="about-img">
+              <img src="./assets/images/about-img.png"
+                alt="Illustration fra ByteCave" class="about-img">
 
-              <img src="./assets/images/character-1.png" alt="Game character" class="character character-1">
+              <img src="./assets/images/character-1.png"
+                alt="" class="character character-1">
 
-              <img src="./assets/images/character-2.png" alt="Game character" class="character character-2">
+              <img src="./assets/images/character-2.png"
+                alt="" class="character character-2">
 
-              <img src="./assets/images/character-3.png" alt="Game character" class="character character-3">
+              <img src="./assets/images/character-3.png"
+                alt="" class="character character-3">
 
             </figure>
 
@@ -210,68 +185,74 @@
 
               <p class="about-subtitle">OM BYTECAVE</p>
 
-<h2 class="about-title">
-  ET FÆLLESSKAB FOR <strong>GAMERE</strong>
-</h2>
+              <h2 class="about-title">
+                ET FÆLLESSKAB FOR <strong>GAMERE</strong>
+              </h2>
 
-<p class="about-text">
-  ByteCave er et gamingfællesskab, hvor gamere kan mødes,
-  spille sammen og konkurrere mod hinanden. Vi skaber
-  plads til både nye og erfarne spillere gennem events,
-  turneringer og fælles gamingoplevelser.
-</p>
+              <p class="about-text">
+                ByteCave er et gamingfællesskab, hvor gamere kan mødes,
+                spille sammen og konkurrere mod hinanden. Vi skaber plads
+                til både nye og erfarne spillere gennem events, turneringer
+                og fælles gamingoplevelser.
+              </p>
 
-<p class="about-bottom-text">
-  <ion-icon name="arrow-forward-circle-outline"></ion-icon>
-
-  <span>Spil sammen, konkurrér og bliv bedre.</span>
-</p>
+              <p class="about-bottom-text">
+                <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+                <span>Spil sammen, konkurrér og bliv bedre.</span>
+              </p>
 
             </div>
 
           </div>
+
         </section>
 
 
-
-
-
-        <!-- 
-          - #TOURNAMENT
-        -->
+        <!-- TOURNAMENT -->
 
         <section class="tournament" id="tournament">
+
           <div class="container">
 
             <div class="tournament-content">
 
               <p class="tournament-subtitle">KOMMENDE EVENTS</p>
 
-<h2 class="h3 tournament-title">TURNERINGER & EVENTS</h2>
+              <h2 class="h3 tournament-title">
+                TURNERINGER & EVENTS
+              </h2>
 
               <p class="tournament-text">
-                 Deltag i spændende gamingturneringer, konkurrér mod andre spillere og få chancen for at vinde fede præmier.
+                Deltag i gamingturneringer, konkurrér mod andre spillere
+                og vær med til at skabe gode oplevelser i fællesskabet.
               </p>
 
-              <button class="btn btn-primary">Se events</button>
+              <a href="#contact" class="btn btn-primary">
+                Spørg om events
+              </a>
 
             </div>
 
             <div class="tournament-prize">
 
-              <h2 class="h3 tournament-prize-title">Præmiepulje</h2>
+              <h2 class="h3 tournament-prize-title">
+                EVENTS HOS BYTECAVE
+              </h2>
 
-              <data value="5000">5000 kr</data>
+              <p>Fællesskab og konkurrence</p>
 
               <figure>
-                <img src="./assets/images/prize-img.png" alt="Prize image">
+                <img src="./assets/images/prize-img.png"
+                  alt="Illustration til ByteCaves events">
               </figure>
 
             </div>
 
             <div class="tournament-winners">
 
-              <h2 class="h3 tournament-winners-title">Tidligere vindere</h2>
+              <h2 class="h3 tournament-winners-title">
+                EKSEMPLER PÅ PLACERINGER
+              </h2>
 
               <ul class="tournament-winners-list">
 
@@ -279,7 +260,8 @@
                   <div class="winner-card">
 
                     <figure class="card-banner">
-                      <img src="./assets/images/winner-img-1.png" alt="Winner image">
+                      <img src="./assets/images/winner-img-1.png"
+                        alt="Eksempel på førsteplads">
                     </figure>
 
                     <h3 class="h5 card-title">1. plads</h3>
@@ -291,7 +273,8 @@
                   <div class="winner-card">
 
                     <figure class="card-banner">
-                      <img src="./assets/images/winner-img-2.png" alt="Winner image">
+                      <img src="./assets/images/winner-img-2.png"
+                        alt="Eksempel på andenplads">
                     </figure>
 
                     <h3 class="h5 card-title">2. plads</h3>
@@ -304,392 +287,392 @@
             </div>
 
           </div>
+
         </section>
 
 
+        <!-- GALLERY -->
 
+        <section class="gallery" id="gallery">
 
-
-        <!-- 
-          - #GALLERY
-        -->
-
-        <section class="gallery">
           <div class="container">
-<h2 class="h2 section-title">BYTECAVE GALLERI</h2>
 
-<p class="section-text">
-  Se billeder fra vores gamingevents, turneringer og fællesskab.
-</p>
+            <h2 class="h2 section-title">
+              BYTECAVE GALLERI
+            </h2>
+
+            <p class="section-text">
+              Se billeder fra vores gamingevents, turneringer og fællesskab.
+            </p>
+
             <ul class="gallery-list has-scrollbar">
 
               <li>
                 <figure class="gallery-item">
-                  <img src="./assets/images/gallery-img-1.jpg" alt="Gallery image">
+                  <img src="./assets/images/gallery-img-1.jpg"
+                    alt="Gamingbillede fra galleriet">
                 </figure>
               </li>
 
               <li>
                 <figure class="gallery-item">
-                  <img src="./assets/images/gallery-img-2.jpg" alt="Gallery image">
+                  <img src="./assets/images/gallery-img-2.jpg"
+                    alt="Gamingbillede fra galleriet">
                 </figure>
               </li>
 
               <li>
                 <figure class="gallery-item">
-                  <img src="./assets/images/gallery-img-3.jpg" alt="Gallery image">
+                  <img src="./assets/images/gallery-img-3.jpg"
+                    alt="Gamingbillede fra galleriet">
                 </figure>
               </li>
 
               <li>
                 <figure class="gallery-item">
-                  <img src="./assets/images/gallery-img-4.jpg" alt="Gallery image">
+                  <img src="./assets/images/gallery-img-4.jpg"
+                    alt="Gamingbillede fra galleriet">
                 </figure>
               </li>
 
             </ul>
 
           </div>
+
         </section>
 
 
-
-
-
-        <!-- 
-          - #TEAM
-        -->
+        <!-- TEAM / COMMUNITY -->
 
         <section class="team" id="team">
+
           <div class="container">
 
-            <h2 class="h2 section-title">Aktive Teammedlemmer</h2>
+            <h2 class="h2 section-title">
+              BYTECAVE-FÆLLESSKABET
+            </h2>
+
+            <p class="section-text">
+              Et sted hvor spillere kan mødes, finde holdkammerater
+              og dele interessen for gaming.
+            </p>
 
             <ul class="team-list">
 
               <li>
-                <a href="#" class="team-member">
+                <div class="team-member">
                   <figure>
-                    <img src="./assets/images/team-member-1.png" alt="Team member image">
+                    <img src="./assets/images/team-member-1.png"
+                      alt="Gaming-avatar">
                   </figure>
-
-                  <ion-icon name="link-outline"></ion-icon>
-                </a>
+                </div>
               </li>
 
               <li>
-                <a href="#" class="team-member">
+                <div class="team-member">
                   <figure>
-                    <img src="./assets/images/team-member-2.png" alt="Team member image">
+                    <img src="./assets/images/team-member-2.png"
+                      alt="Gaming-avatar">
                   </figure>
-
-                  <ion-icon name="link-outline"></ion-icon>
-                </a>
+                </div>
               </li>
 
               <li>
-                <a href="#" class="team-member">
+                <div class="team-member">
                   <figure>
-                    <img src="./assets/images/team-member-3.png" alt="Team member image">
+                    <img src="./assets/images/team-member-3.png"
+                      alt="Gaming-avatar">
                   </figure>
-
-                  <ion-icon name="link-outline"></ion-icon>
-                </a>
+                </div>
               </li>
 
               <li>
-                <a href="#" class="team-member">
+                <div class="team-member">
                   <figure>
-                    <img src="./assets/images/team-member-4.png" alt="Team member image">
+                    <img src="./assets/images/team-member-4.png"
+                      alt="Gaming-avatar">
                   </figure>
-
-                  <ion-icon name="link-outline"></ion-icon>
-                </a>
+                </div>
               </li>
 
               <li>
-                <a href="#" class="team-member">
+                <div class="team-member">
                   <figure>
-                    <img src="./assets/images/team-member-6.png" alt="Team member image">
+                    <img src="./assets/images/team-member-6.png"
+                      alt="Gaming-avatar">
                   </figure>
-
-                  <ion-icon name="link-outline"></ion-icon>
-                </a>
+                </div>
               </li>
 
               <li>
-                <a href="#" class="team-member">
+                <div class="team-member">
                   <figure>
-                    <img src="./assets/images/team-member-7.png" alt="Team member image">
+                    <img src="./assets/images/team-member-7.png"
+                      alt="Gaming-avatar">
                   </figure>
-
-                  <ion-icon name="link-outline"></ion-icon>
-                </a>
+                </div>
               </li>
 
               <li>
-                <a href="#" class="team-member">
+                <div class="team-member">
                   <figure>
-                    <img src="./assets/images/team-member-8.png" alt="Team member image">
+                    <img src="./assets/images/team-member-8.png"
+                      alt="Gaming-avatar">
                   </figure>
-
-                  <ion-icon name="link-outline"></ion-icon>
-                </a>
+                </div>
               </li>
 
               <li>
-                <a href="#" class="team-member">
+                <div class="team-member">
                   <figure>
-                    <img src="./assets/images/team-member-9.png" alt="Team member image">
+                    <img src="./assets/images/team-member-9.png"
+                      alt="Gaming-avatar">
                   </figure>
-
-                  <ion-icon name="link-outline"></ion-icon>
-                </a>
+                </div>
               </li>
 
               <li>
-                <a href="#" class="team-member">
+                <div class="team-member">
                   <figure>
-                    <img src="./assets/images/team-member-10.png" alt="Team member image">
+                    <img src="./assets/images/team-member-10.png"
+                      alt="Gaming-avatar">
                   </figure>
-
-                  <ion-icon name="link-outline"></ion-icon>
-                </a>
+                </div>
               </li>
 
               <li>
-                <a href="#" class="team-member">
+                <div class="team-member">
                   <figure>
-                    <img src="./assets/images/team-member-11.png" alt="Team member image">
+                    <img src="./assets/images/team-member-11.png"
+                      alt="Gaming-avatar">
                   </figure>
-
-                  <ion-icon name="link-outline"></ion-icon>
-                </a>
+                </div>
               </li>
 
               <li>
-                <a href="#" class="team-member">
+                <div class="team-member">
                   <figure>
-                    <img src="./assets/images/team-member-12.png" alt="Team member image">
+                    <img src="./assets/images/team-member-12.png"
+                      alt="Gaming-avatar">
                   </figure>
-
-                  <ion-icon name="link-outline"></ion-icon>
-                </a>
+                </div>
               </li>
 
             </ul>
 
-            <button class="btn btn-primary">Se alle medlemmer</button>
-
           </div>
+
         </section>
 
 
+        <!-- HARDWARE -->
+
+        
+<!-- HARDWARE & SPECS -->
+
+<section class="gears" id="gears">
+
+  <div class="container">
+
+    <h2 class="h2 section-title">
+      HARDWARE & SPECS
+    </h2>
+
+    <p class="section-text">
+      Udforsk gamingudstyr fra kendte producenter.
+      Her finder du eksempler på hardware, der kan
+      forbedre din gamingoplevelse.
+    </p>
+
+    <ul class="gears-list">
+
+      <li>
+        <div class="gears-card">
+          <div class="card-banner">
+            <img src="./assets/images/hardware-pc.jpg"
+              alt="ASUS TUF Gaming T500">
+          </div>
+          <div class="card-content">
+            <div class="card-title-wrapper">
+              <h3 class="h3 card-title">ASUS TUF Gaming T500</h3>
+              <p class="card-subtitle">Gaming PC</p>
+            </div>
+          </div>
+          <p class="card-description">
+            En stationær gaming-PC fra ASUS TUF-serien.
+            En færdigbygget computer til gaming og andre
+            krævende opgaver.
+          </p>
+        </div>
+      </li>
+
+      <li>
+        <div class="gears-card">
+          <div class="card-banner">
+            <img src="./assets/images/hardware-mouse.jpg"
+              alt="Logitech G502 HERO">
+          </div>
+          <div class="card-content">
+            <div class="card-title-wrapper">
+              <h3 class="h3 card-title">Logitech G502 HERO</h3>
+              <p class="card-subtitle">Gaming Mouse</p>
+            </div>
+          </div>
+          <p class="card-description">
+            En gamingmus med programmerbare knapper,
+            som giver mulighed for at tilpasse funktioner
+            til forskellige spil.
+          </p>
+        </div>
+      </li>
+
+      <li>
+        <div class="gears-card">
+          <div class="card-banner">
+            <img src="./assets/images/hardware-mousepad.jpg"
+              alt="SteelSeries QcK">
+          </div>
+          <div class="card-content">
+            <div class="card-title-wrapper">
+              <h3 class="h3 card-title">SteelSeries QcK</h3>
+              <p class="card-subtitle">Mousepad</p>
+            </div>
+          </div>
+          <p class="card-description">
+            En stofbaseret musemåtte, der giver en jævn
+            overflade til præcise musebevægelser.
+          </p>
+        </div>
+      </li>
+
+      <li>
+        <div class="gears-card">
+          <div class="card-banner">
+            <img src="./assets/images/hardware-keyboard.jpg"
+              alt="SteelSeries Apex TKL 3">
+          </div>
+          <div class="card-content">
+            <div class="card-title-wrapper">
+              <h3 class="h3 card-title">SteelSeries Apex TKL 3</h3>
+              <p class="card-subtitle">Gaming Keyboard</p>
+            </div>
+          </div>
+          <p class="card-description">
+            Et kompakt gamingtastatur uden numerisk
+            tastaturdel, så der bliver mere plads på skrivebordet.
+          </p>
+        </div>
+      </li>
+
+      <li>
+        <div class="gears-card">
+          <div class="card-banner">
+            <img src="./assets/images/hardware-headset.jpg"
+              alt="Trust GXT 416 Zirox">
+          </div>
+          <div class="card-content">
+            <div class="card-title-wrapper">
+              <h3 class="h3 card-title">Trust GXT 416 Zirox</h3>
+              <p class="card-subtitle">Gaming Headset</p>
+            </div>
+          </div>
+          <p class="card-description">
+            Et gamingheadset med mikrofon, så du kan høre
+            spillets lyde og kommunikere med andre spillere.
+          </p>
+        </div>
+      </li>
+
+      <li>
+        <div class="gears-card">
+          <div class="card-banner">
+            <img src="./assets/images/hardware-controller.jpg"
+              alt="Sony DualSense">
+          </div>
+          <div class="card-content">
+            <div class="card-title-wrapper">
+              <h3 class="h3 card-title">Sony DualSense</h3>
+              <p class="card-subtitle">Gaming Controller</p>
+            </div>
+          </div>
+          <p class="card-description">
+            En trådløs controller med haptisk feedback
+            og adaptive aftrækkere til understøttede spil.
+          </p>
+        </div>
+      </li>
+
+    </ul>
+
+  </div>
+
+</section>
 
 
 
-        <!-- 
-          - #GEARS
-        -->
+        <!-- PRACTICAL INFORMATION -->
 
-        <section class="gears" id="gears">
+        <section class="about" id="practical">
+
           <div class="container">
 
-            <h2 class="h2 section-title">Tjek vores udstyr</h2>
+            <div class="about-content">
 
-            <ul class="gears-list">
+              <p class="about-subtitle">GODT AT VIDE</p>
 
-              <li>
-                <div class="gears-card">
+              <h2 class="about-title">
+                PRAKTISK INFO <strong>& REGLER</strong>
+              </h2>
 
-                  <div class="card-banner">
+              <p class="about-text">
+                Vis respekt for andre spillere, følg eventuelle
+                turneringsregler, og hjælp med at skabe et godt fællesskab.
+                Tjek altid eventets beskrivelse for information om
+                tidspunkt, deltagelse og format.
+              </p>
 
-                    <a href="#">
-                      <img src="./assets/images/gears-img-1.png" alt="Headphone">
-                    </a>
+              <p class="about-bottom-text">
+                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                <span>Fair play, respekt og god kommunikation.</span>
+              </p>
 
-                    <button class="share">
-                      <ion-icon name="share-social"></ion-icon>
-                    </button>
-
-                    <div class="card-time-wrapper">
-                      <ion-icon name="time-outline"></ion-icon>
-
-                      <span>In 4 days</span>
-                    </div>
-
-                  </div>
-
-                  <div class="card-content">
-
-                    <div class="card-title-wrapper">
-
-                      <h3 class="h3 card-title">Headphone</h3>
-
-                      <p class="card-subtitle">e-sports</p>
-
-                    </div>
-
-                    <div class="card-prize">$18</div>
-
-                  </div>
-
-                  <div class="card-actions">
-
-                    <button class="btn btn-primary">
-                      <ion-icon name="add-outline"></ion-icon>
-
-                      <span>Add to cart</span>
-                    </button>
-
-                    <button class="btn card-btn">
-                      <ion-icon name="heart-outline"></ion-icon>
-                    </button>
-
-                  </div>
-
-                </div>
-              </li>
-
-              <li>
-                <div class="gears-card">
-
-                  <div class="card-banner">
-
-                    <a href="#">
-                      <img src="./assets/images/gears-img-2.png" alt="Controller">
-                    </a>
-
-                    <button class="share">
-                      <ion-icon name="share-social"></ion-icon>
-                    </button>
-
-                    <div class="card-time-wrapper">
-                      <ion-icon name="time-outline"></ion-icon>
-
-                      <span>In 4 days</span>
-                    </div>
-
-                  </div>
-
-                  <div class="card-content">
-
-                    <div class="card-title-wrapper">
-
-                      <h3 class="h3 card-title">Controller</h3>
-
-                      <p class="card-subtitle">e-sports</p>
-
-                    </div>
-
-                    <div class="card-prize">$29</div>
-
-                  </div>
-
-                  <div class="card-actions">
-
-                    <button class="btn btn-primary">
-                      <ion-icon name="add-outline"></ion-icon>
-
-                      <span>Add to cart</span>
-                    </button>
-
-                    <button class="btn card-btn">
-                      <ion-icon name="heart-outline"></ion-icon>
-                    </button>
-
-                  </div>
-
-                </div>
-              </li>
-
-              <li>
-                <div class="gears-card">
-
-                  <div class="card-banner">
-
-                    <a href="#">
-                      <img src="./assets/images/gears-img-3.png" alt="Gaming mask">
-                    </a>
-
-                    <button class="share">
-                      <ion-icon name="share-social"></ion-icon>
-                    </button>
-
-                    <div class="card-time-wrapper">
-                      <ion-icon name="time-outline"></ion-icon>
-
-                      <span>In 4 days</span>
-                    </div>
-
-                  </div>
-
-                  <div class="card-content">
-
-                    <div class="card-title-wrapper">
-
-                      <h3 class="h3 card-title">Gaming mask</h3>
-
-                      <p class="card-subtitle">e-sports</p>
-
-                    </div>
-
-                    <div class="card-prize">$45</div>
-
-                  </div>
-
-                  <div class="card-actions">
-
-                    <button class="btn btn-primary">
-                      <ion-icon name="add-outline"></ion-icon>
-
-                      <span>Add to cart</span>
-                    </button>
-
-                    <button class="btn card-btn">
-                      <ion-icon name="heart-outline"></ion-icon>
-                    </button>
-
-                  </div>
-
-                </div>
-              </li>
-
-            </ul>
+            </div>
 
           </div>
+
         </section>
 
 
+        <!-- CONTACT -->
 
+        <section class="newsletter" id="contact">
 
-
-        <!-- 
-          - #NEWSLETTER
-        -->
-
-        <section class="newsletter">
           <div class="container">
 
             <div class="newsletter-card">
 
               <div class="newsletter-content">
+
                 <figure class="newsletter-img">
-                  <img src="./assets/images/newsletter-img.png" alt="Newsletter image">
+                  <img src="./assets/images/newsletter-img.png"
+                    alt="ByteCave kontakt">
                 </figure>
 
-                <h2 class="h2 newsletter-title">Subscribe to our newsletter</h2>
+                <h2 class="h2 newsletter-title">
+                  HAR DU SPØRGSMÅL?
+                </h2>
+
+                <p>
+                  Kontakt ByteCave, hvis du vil vide mere om
+                  fællesskabet eller events.
+                </p>
+
               </div>
-
-              <form action="" class="newsletter-form">
-                <input type="email" name="email" required placeholder="Your Email Address" class="input-field">
-
-                <button type="submit" class="btn btn-secondary">Subscribe</button>
-              </form>
 
             </div>
 
           </div>
+
         </section>
 
       </div>
@@ -698,22 +681,18 @@
   </main>
 
 
-
-
-
-  <!-- 
-    - #FOOTER
-  -->
+  <!-- FOOTER -->
 
   <footer>
 
     <div class="footer-top">
+
       <div class="container">
 
         <div class="footer-brand-wrapper">
 
-          <a href="#" class="logo">
-            <img src="./assets/images/logo.svg" alt="GameX logo">
+          <a href="#hero" class="logo">
+            <img src="./assets/images/logo.svg" alt="ByteCave logo">
           </a>
 
           <div class="footer-menu-wrapper">
@@ -721,87 +700,71 @@
             <ul class="footer-menu-list">
 
               <li>
-                <a href="#hero" class="footer-menu-link">Home</a>
+                <a href="#hero" class="footer-menu-link">Forside</a>
               </li>
 
               <li>
-                <a href="#about" class="footer-menu-link">About</a>
+                <a href="#about" class="footer-menu-link">Om os</a>
               </li>
 
               <li>
-                <a href="#tournament" class="footer-menu-link">Tournament</a>
+                <a href="#tournament" class="footer-menu-link">Turneringer</a>
               </li>
 
               <li>
-                <a href="#team" class="footer-menu-link">Team</a>
+                <a href="#team" class="footer-menu-link">Fællesskab</a>
               </li>
 
               <li>
-                <a href="#gears" class="footer-menu-link">Gears</a>
+                <a href="#gears" class="footer-menu-link">Hardware</a>
               </li>
 
               <li>
-                <a href="#" class="footer-menu-link">Contact</a>
+                <a href="#contact" class="footer-menu-link">Kontakt</a>
               </li>
 
             </ul>
 
-            <div class="footer-input-wrapper">
-              <input type="text" name="message" required placeholder="Find Here Now" class="footer-input">
-
-              <button class="btn btn-primary">
-                <ion-icon name="search-outline"></ion-icon>
-              </button>
-            </div>
-
           </div>
 
         </div>
+
 
         <div class="footer-quicklinks">
 
           <ul class="quicklink-list">
 
             <li>
-              <a href="#" class="quicklink-item">Faq</a>
+              <a href="#practical" class="quicklink-item">Regler</a>
             </li>
 
             <li>
-              <a href="#" class="quicklink-item">Help center</a>
+              <a href="#practical" class="quicklink-item">Praktisk info</a>
             </li>
 
             <li>
-              <a href="#" class="quicklink-item">Terms of use</a>
-            </li>
-
-            <li>
-              <a href="#" class="quicklink-item">Privacy</a>
+              <a href="#contact" class="quicklink-item">Kontakt</a>
             </li>
 
           </ul>
 
+
           <ul class="footer-social-list">
 
             <li>
-              <a href="#" class="footer-social-link">
+              <a href="#" class="footer-social-link" aria-label="Discord">
                 <ion-icon name="logo-discord"></ion-icon>
               </a>
             </li>
 
             <li>
-              <a href="#" class="footer-social-link">
+              <a href="#" class="footer-social-link" aria-label="Twitch">
                 <ion-icon name="logo-twitch"></ion-icon>
               </a>
             </li>
 
             <li>
-              <a href="#" class="footer-social-link">
-                <ion-icon name="logo-xbox"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-social-link">
+              <a href="#" class="footer-social-link" aria-label="YouTube">
                 <ion-icon name="logo-youtube"></ion-icon>
               </a>
             </li>
@@ -811,48 +774,48 @@
         </div>
 
       </div>
+
     </div>
 
+
     <div class="footer-bottom">
+
       <div class="container">
+
         <p class="copyright">
-          Copyright &copy; 2025 <a href="#">mscbuild</a>. all rights reserved
+          Copyright &copy; 2026
+          <a href="#hero">ByteCave</a>.
+          Alle rettigheder forbeholdes.
         </p>
 
-        <figure class="footer-bottom-img">
-          <img src="./assets/images/footer-bottom-img.png" alt="Online payment companies logo">
-        </figure>
       </div>
+
     </div>
 
   </footer>
 
 
+  <!-- GO TO TOP -->
 
+  <a href="#top" class="btn btn-primary go-top" data-go-top
+    aria-label="Til toppen">
 
-
-  <!-- 
-    - #GO TO TOP
-  -->
-
-  <a href="#top" class="btn btn-primary go-top" data-go-top>
     <ion-icon name="chevron-up-outline"></ion-icon>
+
   </a>
 
 
+  <!-- JAVASCRIPT -->
 
-
-
-  <!-- 
-    - custom js link
-  -->
   <script src="./assets/js/script.js"></script>
 
-  <!-- 
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
+  </script>
+
+  <script nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js">
+  </script>
 
 </body>
 </html>
