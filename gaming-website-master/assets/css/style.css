@@ -617,11 +617,22 @@ body.active { overflow-y: hidden; }
 
 
 
+
 /*-----------------------------------*\
   #TEAM
 \*-----------------------------------*/
 
-.team { padding: var(--section-padding) 0; }
+.team {
+  padding: var(--section-padding) 0;
+}
+
+.team .section-text {
+  color: var(--white);
+  text-align: center;
+  max-width: 650px;
+  margin: -45px auto 50px;
+  line-height: 1.8;
+}
 
 .team-list {
   display: flex;
@@ -666,97 +677,77 @@ body.active { overflow-y: hidden; }
 
 
 
+
+
 /*-----------------------------------*\
   #GEARS
 \*-----------------------------------*/
 
-.gears { padding: var(--section-padding) 0; }
+.gears {
+  padding: var(--section-padding) 0;
+}
 
 .gears-list {
   display: grid;
+  grid-template-columns: 1fr;
   gap: 50px;
 }
 
-.gears-card .card-banner {
-  position: relative;
-  background: url("../images/gears-card-bg.png") no-repeat;
-  background-size: contain;
-  background-position: center;
-  width: 100%;
-  aspect-ratio: 2 / 1.7;
-  display: grid;
-  place-items: center;
-  margin-bottom: 30px;
+.gears-card {
+  color: var(--white);
 }
 
-.gears .card-banner a { width: 100%; }
+/* Product image area */
+.gears-card .card-banner {
+  position: relative;
+  background: none;
+  width: 100%;
+  aspect-ratio: 1.5 / 1;
+  min-height: 240px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 20px;
+}
 
+/* Actual product image */
 .gears .card-banner img {
-  width: 45%;
+  display: block;
+  width: 90%;
+  height: 250px;
+  object-fit: contain;
   margin-inline: auto;
 }
 
-.share,
-.card-time-wrapper {
-  position: absolute;
-  color: var(--orange);
-}
-
-.share {
-  top: 25%;
-  right: 8%;
-  font-size: 20px;
-  border: 2px solid var(--onyx);
-  width: 45px;
-  height: 45px;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  transition: var(--transition-1);
-}
-
-.share:is(:hover, :focus) { border-color: var(--orange); }
-
-.card-time-wrapper {
-  top: 2%;
-  right: 5%;
-  font-family: var(--ff-oswald);
-  font-size: var(--fs-9);
-  font-weight: var(--fw-500);
-  text-transform: uppercase;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-}
-
-.card-time-wrapper ion-icon {
-  font-size: 16px;
-  --ionicon-stroke-width: 50px;
-}
-
+/* Product information */
 .gears .card-content {
   color: var(--white);
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-transform: uppercase;
 }
 
-.gears-card :is(.card-title, .card-prize) {
+.gears-card .card-title {
+  color: var(--white);
   font-family: var(--ff-oswald);
   font-size: var(--fs-5);
   font-weight: var(--fw-700);
+  margin-bottom: 5px;
 }
 
-.gears-card .card-title { margin-bottom: 5px; }
-
 .gears-card .card-subtitle {
-  color: var(--light-gray);
+  color: var(--white);
   font-size: var(--fs-8);
 }
 
+.gears-card .card-description {
+  color: var(--white);
+  font-size: var(--fs-9);
+  line-height: 1.8;
+}
+
+/* Existing card buttons */
 .gears .card-actions {
   display: flex;
   justify-content: space-between;
@@ -778,7 +769,6 @@ body.active { overflow-y: hidden; }
 
 .gears-card .card-btn {
   --polygon-1: polygon(75% 0, 100% 25%, 100% 100%, 25% 100%, 0 75%, 0 0);
-
   background: var(--raisin-black-1);
   color: var(--orange);
 }
@@ -789,6 +779,7 @@ body.active { overflow-y: hidden; }
   background: var(--orange);
   color: var(--white);
 }
+
 
 
 
